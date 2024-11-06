@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+  <title>Details</title>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Data Entry Form</h1>
+        </div>
+      </div>
+    </section>
+    <form id="form" class="container m-4 pl-4" method="POST">
+
+      <div class="field">
+        <label class="label">Login Employee Id</label>
+        <div class="control">
+          <input
+            class="input"
+            type="Id"
+            placeholder="Your Id"
+            name="Id" required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Login Employee Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Your Name"
+            name="Name"  required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Login Employee Email</label>
+        <div class="control">
+          <input
+            class="input"
+            type="email"
+            placeholder="Your Email"
+            name="Email" required
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Process</label>
+        <div class="control" >
+          <select name="Process" class="input">
+            <option value="ABC Process">ABC Process</option>
+            <option value="B Process">B Process</option>
+            <option value="C Process">C Process</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Designation</label>
+        <div class="control" >
+          <select name="Designation" class="input">
+            <option value="Manager">Manager</option>
+            <option value="Developer">Developer</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Corp Quality SPOC</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Corp Quality SPOC"
+            name="Corp Quality"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Process Status</label>
+        <div class="control" >
+          <select name="Process Status" class="input">
+            <option value="Live">Live</option>
+            <option value="Disable">Disable</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Industry Segment</label>
+        <div class="control" >
+          <select name="Industry Segment" class="input">
+            <option value="E-COMMERCE">E-COMMERCE</option>
+            <option value="HEALTHCARE">HEALTHCARE</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Business Type</label>
+        <div class="control" >
+          <select name="Business Type" class="input">
+            <option value="DOMESTIC">DOMESTIC</option>
+            <option value="COOPERATIVE">COOPERATIVE</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Services Offered</label>
+        <div class="control" >
+          <select name="Services Offered" class="input">
+            <option value="VOICE SERVICES">VOICE SERVICES</option>
+            <option value="RETAIL">RETAIL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Business Head</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Business Head"
+            name="Business Head"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Account Head</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Account Head"
+            name="Account Head"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Project Manager</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Project Manager"
+            name="Project Manager"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Location Spoc</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Location Spoc"
+            name="Location Spoc"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Client Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Client Name"
+            name="Client Name"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Process Name</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Process Name"
+            name="Process Name"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Operating Location's</label>
+        <div class="control" >
+          <select name="Operating Location's" class="input">
+            <option value="Pune">Pune</option>
+            <option value="Bangalore">Bangalore</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Financial Implications</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Financial Implications" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Financial Implications" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">What are the financial implication parameters followed or not</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Financial Implications Parameters"
+            name="Financial Implications Parameters"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Billable Head Count</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Billable Head Count"
+            name="Billable Head Count"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Cost Code</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Cost Code"
+            name="Cost Code"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Billing Model</label>
+        <div class="control" >
+          <select name="Billing Model" class="input">
+            <option value="PCE">PCE</option>
+            <option value="BCF">BCF</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Business Started Date</label>
+        <div class="control">
+          <input
+            class="input"
+            type="date"
+            placeholder="Your Business Started Date"
+            name="BSD" 
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Business BAU Date</label>
+        <div class="control">
+          <input
+            class="input"
+            type="date"
+            placeholder="Your Business BAU Date"
+            name="BBD" 
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Business End Date</label>
+        <div class="control">
+          <input
+            class="input"
+            type="date"
+            placeholder="Your Business End Date"
+            name="BED" 
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">CBSL - SLA Monitoring</label>
+        <div class="control" >
+          <select name="CBSL - SLA Monitoring" class="input">
+            <option value="Service Level and Quality">Service Level and Quality</option>
+            <option value="Product Level and Quality">Product Level and Quality</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">CLIENT - SLA Monitoring</label>
+        <div class="control" >
+          <select name="CLIENT - SLA Monitoring" class="input">
+            <option value="Service Level and Quality">Service Level and Quality</option>
+            <option value="Product Level and Quality">Product Level and Quality</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">CBSL - System / Application</label>
+        <div class="control" >
+          <select name="CBSL - System / Application" class="input">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Client - System / Application</label>
+        <div class="control" >
+          <select name="Client - System / Application" class="input">
+            <option value="No">NA</option>
+            <option value="Yes">Yes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Transition Audit</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Transition Audit" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Transition Audit" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Internal Audit (ISO & ISMS)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Internal Audit" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Internal Audit" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">External Audit (ISO & ISMS)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="External Audit" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="External Audit" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Client Audit</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Client Audit" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Client Audit" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">SOP/Process Manuals</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="SOP/Process" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="SOP/Process" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Resource Plan</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Resource Plan" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Resource Plan" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Training Plan</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Training Plan" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Training Plan" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Quality Plan</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Quality Plan" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Quality Plan" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Target Plan</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Target Plan" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Target Plan" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">MIS Reporting</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="MIS Reporting" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="MIS Reporting" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Risk Management (FMEA)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Risk Management" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Risk Management" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Customer First</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Customer First" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Customer First" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Eureka</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Eureka" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Eureka" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Escalation Matrix</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Escalation Matrix" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Escalation Matrix" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Master List</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Master List" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Master List" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Employee PM (Productivity)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Employee PM" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Employee PM" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">MBR (Internal)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="MBR (Internal)" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="MBR (Internal)" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">QBR (Internal)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="QBR (Internal)" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="QBR (Internal)" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">MBR (External)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="MBR (External)" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="MBR (External)" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">QBR (External)</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="QBR (External)" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="QBR (External)" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">MOM Documentation</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="MOM Documentation" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="MOM Documentation" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Annual VOC</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Annual VOC" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Annual VOC" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">VOC Action Plan</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="VOC Action Plan" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="VOC Action Plan" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Mandatory L&D Training Programs</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="L and D Training Programs" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="L and D Training Programs" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Improvement Project</label>
+        <div class="control" >
+          <label class="radio">
+            <input type="radio" name="Improvement Project" value="Y" required/> Yes 
+          </label>
+          <label class="radio">
+            <input type="radio" name="Improvement Project" value="N" /> No
+          </label>
+        </div>
+      </div>
+
+
+      <div class="field">
+        <label class="label">Additional Information</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Any additional information"
+            name="Notes"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Submit
+          </button>
+        </div>
+      </div>
+    </form>
+    <div
+      id="message"
+      style="
+        display: none;
+        margin: 30px;
+        font-weight: bold;
+        color: green;
+        padding: 8px;
+        background-color: beige;
+        border-radius: 4px;
+        border-color: aquamarine;
+      "
+    ></div>
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        document.getElementById("message").textContent = "Submitting..";
+        document.getElementById("message").style.display = "block";
+        document.getElementById("submit-button").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbyIU_y1kfkMn2Iy9pIkxv5hPC5XD4Nhb12lAcMmXbYHcDHtwFJAxr2xa8JXEgghpufE/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            document.getElementById("message").textContent =
+              "Data submitted successfully!";
+            document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.backgroundColor = "green";
+            document.getElementById("message").style.color = "beige";
+            document.getElementById("submit-button").disabled = false;
+            document.getElementById("form").reset();
+
+            setTimeout(function () {
+              document.getElementById("message").textContent = "";
+              document.getElementById("message").style.display = "none";
+            }, 2600);
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            document.getElementById("message").textContent =
+              "An error occurred while submitting the form.";
+            document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
+  </body>
+</html>
